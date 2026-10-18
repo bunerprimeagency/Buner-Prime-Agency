@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Buner Prime Agency (BPA)</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div id="bar"></div><button id="top" aria-label="Back to top" onclick="scrollTo({top:0})">&#8593;</button>
+<header><div class="wrap"><nav>
+<a class="logo" href="#home" onclick="go('home')" aria-label="BPA home"><img src="images/logo.webp" alt="BPA logo"></a>
+<ul id="menu">
+<li><a href="#home" onclick="go('home')">Home</a></li><li><a href="#about" onclick="go('home')">About</a></li><li><a href="#services" onclick="go('home')">Services</a></li><li><a href="#portfolio" onclick="go('home')">Portfolio</a></li><li><a href="#team-page" onclick="go('team')">Team</a></li><li><a href="#faq" onclick="go('home')">FAQ</a></li><li><a href="#courses-page" onclick="go('courses')">Courses</a></li><li><a href="#soon-page" onclick="go('soon')">Coming Soon</a></li><li><a href="#contact" onclick="go('home')">Contact</a></li>
+</ul>
+<a class="btn p cta-n" href="#contact" onclick="go('home')">Get a Quote</a>
+<button class="burger" id="burger" aria-label="Open menu">☰</button>
+</nav></div></header>
+
+<main id="home">
+<section class="hero"><div class="orb o1"></div><div class="orb o2"></div><div class="wrap">
+<div><h1>We build brands that <em id="rot" class="caret">grow online.</em></h1>
+<p>Buner Prime Agency is a full-service digital agency: marketing, ads, web, design, video and AI automation under one team.</p>
+<a class="btn p" href="#contact">Start your project</a> <a class="btn g" href="#services">See our services</a></div>
+<div class="stage"><span class="chip c1">Ads</span><span class="chip c2">Web</span><span class="chip c3">AI</span><div class="cube" id="cube"><img src="images/logo.webp" alt="BPA logo"></div></div>
+</div></section>
+<div class="marq" aria-hidden="true"><div class="track" id="mq"></div></div>
+
+<section id="about" class="alt"><div class="wrap about">
+<div><h2>About BPA</h2><p class="sub" style="margin:0">Buner Prime Agency brings strategy, creativity and technology together so businesses get noticed and get customers. A team of 10 specialists, one point of contact.</p></div>
+<div class="nums"><div><b data-n="10">0</b>Services</div><div><b data-n="10">0</b>Team members</div><div><b data-n="1">0</b>Team, end to end</div><div><b>24/7</b>WhatsApp support</div></div>
+</div></section>
+
+<section id="services"><div class="wrap"><h2>Our Services</h2><p class="sub">Everything your brand needs to be seen, trusted and chosen.</p><div class="grid" id="svc"></div></div></section>
+
+<section id="process"><div class="wrap"><h2>How we work</h2><p class="sub">A simple process from first message to launch.</p><div class="steps">
+<div class="step"><b>Step 1</b><h3>Discover</h3><p>We learn your business and goals.</p></div>
+<div class="step"><b>Step 2</b><h3>Plan</h3><p>We agree on scope, timeline and price.</p></div>
+<div class="step"><b>Step 3</b><h3>Create</h3><p>Design, build and campaign work begins.</p></div>
+<div class="step"><b>Step 4</b><h3>Launch</h3><p>We go live, track results and improve.</p></div>
+</div></div></section>
+
+<section id="portfolio"><div class="wrap"><h2>Portfolio</h2><p class="sub">Our work, organised by service. Tap a service to see its projects.</p><div class="tabs" id="ptabs"></div><div class="grid" id="port"></div></div></section>
+
+<section id="team" class="alt"><div class="wrap"><h2>Meet our leadership</h2><p class="sub">The people who lead every project at BPA.</p><div class="grid" id="tm3"></div><p style="margin-top:30px"><a class="btn g" href="#team-page" onclick="go('team')">View full team (10)</a></p></div></section>
+
+<section id="faq"><div class="wrap" style="max-width:780px"><h2>FAQ</h2><p class="sub">Quick answers before you message us.</p>
+<details><summary>Which services do you offer?</summary><p>Digital marketing, social media, Meta and Google Ads, web development, UI/UX, graphic design, video editing, AI automation, photography and videography, and digital tools and subscriptions.</p></details>
+<details><summary>How long does a website take?</summary><p>Most business websites take 2 to 4 weeks, depending on pages and content.</p></details>
+<details><summary>Can I buy a single service?</summary><p>Yes. Every service is available on its own or as part of a package.</p></details>
+<details><summary>How do I get started?</summary><p>Message us on WhatsApp or fill in the contact form. We reply with a plan and a quote.</p></details>
+<details><summary>Do you offer courses?</summary><p>Yes. See the Courses page for current and upcoming training.</p></details>
+</div></section>
+
+<section><div class="wrap"><div class="cta"><h2>Ready to grow your business online?</h2><a class="btn p" href="#contact">Get a free consultation</a></div></div></section>
+
+<section id="contact" class="alt"><div class="wrap"><h2>Contact us</h2><p class="sub">We usually reply the same day. Choose the way that suits you.</p>
+<div class="contact"><div class="ccards" id="ccards"></div>
+<form id="cf"><h3>Send us a message</h3><label>Your name<input name="n" required autocomplete="name"></label><label>Phone or WhatsApp<input name="p" required inputmode="tel" autocomplete="tel" placeholder="03XX XXXXXXX"></label><label>What do you need?<textarea name="m" rows="4" placeholder="Tell us about your project"></textarea></label><button class="btn p" type="submit">Send on WhatsApp</button><small>Your message opens in WhatsApp so you can send it to us directly.</small></form></div></div></section>
+</main>
+
+<main id="courses-page" class="page"><section><div class="wrap"><h2>Courses</h2><p class="sub">Learn practical digital skills from the BPA team.</p><div class="grid" id="cs"></div><p style="margin-top:30px"><a class="btn g" href="#home" onclick="go('home')">← Back to home</a></p></div></section></main>
+
+<main id="soon-page" class="page"><section><div class="wrap"><div class="soonbox"><span class="tg">Buner Prime Agency</span><h2 class="sh">Coming Soon, Inshallah</h2><p>We are working on something new for you. Stay connected with BPA.</p><a class="btn p" id="wa3" href="#">Get updates on WhatsApp</a></div><div class="grid" id="sn" style="margin-top:28px"></div><p style="margin-top:30px"><a class="btn g" href="#home" onclick="go('home')">← Back to home</a></p></div></section></main>
+
+<main id="team-page" class="page"><section><div class="wrap"><h2>Our Team</h2><p class="sub">Ten specialists behind every project.</p><div class="grid" id="tm"></div><p style="margin-top:30px"><a class="btn g" href="#home" onclick="go('home')">&larr; Back to home</a></p></div></section></main>
+
+<footer><div class="wrap"><div><span class="logo"><img src="images/logo.webp" alt="BPA logo" style="height:36px"></span><br>Buner Prime Agency<br>© 2026 All rights reserved.</div><div id="fc"></div><a class="btn g" href="#contact" onclick="go('home')">Contact us</a><a id="adminlink" class="btn g" href="#admin" style="padding:8px 16px;font-size:13px">Admin login</a></div></footer>
+<a class="wa" id="wa2" href="#" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<dialog id="adm" aria-labelledby="admt">
+  <div class="adm-container">
+    <div class="adm-header">
+      <div class="adm-brand">
+        <div class="adm-logo-badge">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3 id="admt" class="adm-title">BPA Admin Suite</h3>
+          <span class="adm-status-badge" id="adm-status">● System Ready</span>
+        </div>
+      </div>
+      <button class="adm-close-btn" type="button" onclick="$('adm').close()" aria-label="Close modal">✕</button>
+    </div>
+
+    <!-- VIEW 1: SIGN IN -->
+    <div id="lg" class="adm-view">
+      <div class="adm-view-lead">
+        <h4>Sign In to Admin Portal</h4>
+        <p class="adm-subtext" id="who">Sign in to manage the website.</p>
+      </div>
+      <div id="adm-login-alert" class="adm-alert" hidden></div>
+      <form id="adm-login-form" onsubmit="return false;">
+        <div class="adm-field">
+          <label for="em">Admin Email Address</label>
+          <div class="adm-input-box">
+            <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <input id="em" type="email" placeholder="bunerprimeagency@gmail.com" autocomplete="username" required>
+          </div>
+        </div>
+        <div class="adm-field">
+          <div class="adm-label-row">
+            <label for="pw">Password</label>
+            <button type="button" class="adm-link-btn" id="forgot-link">Forgot password?</button>
+          </div>
+          <div class="adm-input-box">
+            <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <input id="pw" type="password" placeholder="••••••••" autocomplete="current-password" required>
+            <button type="button" class="adm-pw-eye" id="pw-eye" aria-label="Toggle password visibility">
+              <svg id="pw-eye-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <button class="btn p adm-submit-btn" id="login" type="button">
+          <span>Sign In to Dashboard</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- VIEW 2: FORGOT PASSWORD -->
+    <div id="adm-forgot-view" class="adm-view" hidden>
+      <div class="adm-view-lead">
+        <div class="adm-icon-ring">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1.5"/></svg>
+        </div>
+        <h4>Forgot Admin Password?</h4>
+        <p class="adm-subtext">Enter your registered admin email below. We will immediately dispatch your password directly to your email inbox.</p>
+      </div>
+      <div id="adm-forgot-alert" class="adm-alert" hidden></div>
+      <form id="adm-forgot-form" onsubmit="return false;">
+        <div class="adm-field">
+          <label for="forgot-em">Registered Admin Email</label>
+          <div class="adm-input-box">
+            <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <input id="forgot-em" type="email" placeholder="bunerprimeagency@gmail.com" value="bunerprimeagency@gmail.com" required>
+          </div>
+        </div>
+        <button class="btn p adm-submit-btn" id="send-reset-btn" type="button">
+          <span>Send Password to My Email</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        </button>
+        <div class="adm-foot-links">
+          <button type="button" class="adm-link-btn" id="back-to-login">← Back to Sign In</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- VIEW 3: SET NEW PASSWORD -->
+    <div id="adm-reset-view" class="adm-view" hidden>
+      <div class="adm-view-lead">
+        <h4>Set New Password</h4>
+        <p class="adm-subtext">Enter a new secure password for your admin account.</p>
+      </div>
+      <div id="adm-reset-alert" class="adm-alert" hidden></div>
+      <form id="adm-reset-form" onsubmit="return false;">
+        <div class="adm-field">
+          <label for="new-pw">New Password</label>
+          <div class="adm-input-box">
+            <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <input id="new-pw" type="password" placeholder="At least 6 characters" required>
+          </div>
+        </div>
+        <div class="adm-field">
+          <label for="confirm-pw">Confirm New Password</label>
+          <div class="adm-input-box">
+            <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <input id="confirm-pw" type="password" placeholder="Repeat new password" required>
+          </div>
+        </div>
+        <button class="btn p adm-submit-btn" id="save-new-pw-btn" type="button">
+          <span>Save New Password & Enter</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- VIEW 4: ADMIN DASHBOARD -->
+    <div id="af" class="adm-view" hidden>
+      <div class="adm-dash-bar">
+        <div class="adm-user-chip">
+          <div class="adm-avatar" id="adm-avatar">CEO</div>
+          <div>
+            <div class="adm-user-name" id="adm-user-role">Mr Kamran Khan (CEO)</div>
+            <div class="adm-user-sub" id="adm-user-email">bunerprimeagency@gmail.com</div>
+          </div>
+        </div>
+        <div class="adm-dash-actions">
+          <button class="btn g adm-sm-btn" type="button" id="signout">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Sign Out</span>
+          </button>
+          <button class="btn g adm-sm-btn" type="button" onclick="$('adm').close()">Close</button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="adm-stats-grid">
+        <div class="adm-stat-card">
+          <span class="adm-stat-num" id="stat-svc">10</span>
+          <span class="adm-stat-label">Services</span>
+        </div>
+        <div class="adm-stat-card">
+          <span class="adm-stat-num" id="stat-team">10</span>
+          <span class="adm-stat-label">Team Members</span>
+        </div>
+        <div class="adm-stat-card">
+          <span class="adm-stat-num" id="stat-port">6</span>
+          <span class="adm-stat-label">Portfolio Projects</span>
+        </div>
+        <div class="adm-stat-card">
+          <span class="adm-stat-num" id="stat-inq">0</span>
+          <span class="adm-stat-label">Client Inquiries</span>
+        </div>
+      </div>
+
+      <div class="adm-tabs-wrap">
+        <div class="tabs" id="atabs"></div>
+      </div>
+
+      <!-- PANE 1: CONTACT -->
+      <div id="pane-contact" class="adm-pane" hidden>
+        <div class="adm-pane-lead">
+          <h5>Agency Contact & Social Details</h5>
+          <p class="adm-subtext">These details appear across the website, footer, and WhatsApp contact buttons.</p>
+        </div>
+        <div class="adm-form-grid">
+          <div class="adm-field">
+            <label for="c_call">Call Phone Number</label>
+            <div class="adm-input-box">
+              <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <input id="c_call" inputmode="tel" placeholder="0349 0178074">
+            </div>
+          </div>
+          <div class="adm-field">
+            <label for="c_wa">WhatsApp Number</label>
+            <div class="adm-input-box">
+              <span class="adm-icon" style="color:#25D366"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+              <input id="c_wa" inputmode="tel" placeholder="0334 8364835">
+            </div>
+          </div>
+          <div class="adm-field">
+            <label for="c_email">Official Agency Email</label>
+            <div class="adm-input-box">
+              <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+              <input id="c_email" type="email" placeholder="bunerprimeagency@gmail.com">
+            </div>
+          </div>
+          <div class="adm-field">
+            <label for="c_loc">Office Location</label>
+            <div class="adm-input-box">
+              <span class="adm-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <input id="c_loc" placeholder="Pir Baba, Buner">
+            </div>
+          </div>
+        </div>
+        <button class="btn p adm-action-btn" id="csave" type="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          <span>Save Contact Details</span>
+        </button>
+      </div>
+
+      <!-- PANE 2: CONTENT -->
+      <div id="pane-content" class="adm-pane" hidden>
+        <div class="adm-pane-lead">
+          <h5>Add Live Website Content</h5>
+          <p class="adm-subtext">Publish new services, team specialists, courses, or portfolio showcases directly.</p>
+        </div>
+        <div class="adm-field">
+          <label for="ac">Content Type to Add</label>
+          <div class="adm-input-box">
+            <select id="ac">
+              <option value="services">🌟 Service</option>
+              <option value="team">👥 Team Member</option>
+              <option value="courses">🎓 Course</option>
+              <option value="portfolio">🎨 Portfolio Project</option>
+            </select>
+          </div>
+        </div>
+        <div class="adm-field">
+          <label id="lbl-a1" for="a1">Field 1</label>
+          <div class="adm-input-box">
+            <input id="a1">
+          </div>
+        </div>
+        <div class="adm-field">
+          <label id="lbl-a2" for="a2">Field 2</label>
+          <div class="adm-input-box">
+            <input id="a2" list="svcl">
+            <datalist id="svcl"></datalist>
+          </div>
+        </div>
+        <div class="adm-field" id="wrap-a3">
+          <label id="lbl-a3" for="a3">Field 3</label>
+          <div class="adm-input-box">
+            <input id="a3">
+          </div>
+        </div>
+        <button class="btn p adm-action-btn" id="aadd" type="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          <span>Add & Publish Content</span>
+        </button>
+      </div>
+
+      <!-- PANE 3: PHOTOS -->
+      <div id="pane-images" class="adm-pane" hidden>
+        <div class="adm-pane-lead">
+          <h5>Photo Studio & Image Uploader</h5>
+          <p class="adm-subtext">Select a team member or project, pick a photo, and upload. Images are automatically resized and optimized.</p>
+        </div>
+        <div class="adm-form-grid">
+          <div class="adm-field">
+            <label for="imt">Target Type</label>
+            <div class="adm-input-box">
+              <select id="imt">
+                <option value="team">👥 Team Member Photo</option>
+                <option value="portfolio">🎨 Portfolio Project Image</option>
+              </select>
+            </div>
+          </div>
+          <div class="adm-field">
+            <label for="imi">Choose Item</label>
+            <div class="adm-input-box">
+              <select id="imi"></select>
+            </div>
+          </div>
+        </div>
+        <div class="adm-upload-zone" id="adm-upload-dropzone">
+          <input id="imf" type="file" accept="image/*" class="adm-file-input">
+          <div class="adm-upload-placeholder" id="adm-upload-placeholder">
+            <div class="adm-upload-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="adm-upload-text">
+              <b>Click or drag & drop a photo here</b>
+              <small>JPG, PNG, WEBP &bull; Max 1200px auto-optimized</small>
+            </div>
+          </div>
+          <div class="adm-preview-box" id="adm-preview-box" hidden>
+            <img id="adm-preview-img" src="" alt="Selected Preview">
+            <span class="adm-preview-name" id="adm-preview-name">photo.jpg</span>
+          </div>
+        </div>
+        <button class="btn p adm-action-btn" id="imup" type="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span>Upload Photo</span>
+        </button>
+      </div>
+
+      <!-- PANE 4: INQUIRIES -->
+      <div id="pane-inq" class="adm-pane" hidden>
+        <div class="adm-pane-lead">
+          <div class="adm-lead-split">
+            <div>
+              <h5>Client Inquiries & Quote Requests</h5>
+              <p class="adm-subtext">Messages and inquiries sent by visitors via the contact form.</p>
+            </div>
+            <button class="btn g adm-sm-btn" type="button" id="refresh-inq-btn">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l6.67-1.19"/></svg>
+              <span>Refresh</span>
+            </button>
+          </div>
+        </div>
+        <div id="inq" class="adm-inq-stream"></div>
+      </div>
+
+      <!-- PANE 5: SECURITY & PASSWORD -->
+      <div id="pane-security" class="adm-pane" hidden>
+        <div class="adm-pane-lead">
+          <h5>Security & Admin Password</h5>
+          <p class="adm-subtext">Update your account password and review emergency password recovery options.</p>
+        </div>
+        <div class="adm-security-card">
+          <div class="adm-card-head">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <h6>Change Admin Password</h6>
+          </div>
+          <div class="adm-form-grid">
+            <div class="adm-field">
+              <label for="sec-pw">New Password</label>
+              <div class="adm-input-box">
+                <input id="sec-pw" type="password" placeholder="At least 6 characters">
+              </div>
+            </div>
+            <div class="adm-field">
+              <label for="sec-pw-confirm">Confirm New Password</label>
+              <div class="adm-input-box">
+                <input id="sec-pw-confirm" type="password" placeholder="Repeat new password">
+              </div>
+            </div>
+          </div>
+          <button class="btn p adm-action-btn" id="sec-save-pw-btn" type="button">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Update Password</span>
+          </button>
+        </div>
+        <div class="adm-recovery-box">
+          <div class="adm-rec-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </div>
+          <div>
+            <b>Password Reset by Email Active</b>
+            <p>If you or any admin forget the password, simply click "Forgot password?" on the login screen. A new temporary password will be immediately generated and dispatched directly to the admin's email.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/script.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/db.js"></script></body></html>
